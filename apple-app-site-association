@@ -1,38 +1,19 @@
 {
   "applinks": {
-      "details": [
-           {
-             "appIDs": [ "4A7WHUXQS6.co.phlox.eldo" ],
-             "components": [
-               {
-                  "/": "/qa/*",
-                  "exclude": true
-               },
-               {
-                  "/": "/dev/*",
-                  "exclude": true
-               }
-             ]
-           },
-           {
-             "appIDs": [ "4A7WHUXQS6.co.phlox.eldoDev" ],
-             "components": [
-               {
-                  "/": "/dev/*"
-               }
-             ]
-           },
-           {
-             "appIDs": [ "4A7WHUXQS6.co.phlox.eldoQA" ],
-             "components": [
-               {
-                  "/": "/qa/*"
-               }
-             ]
-           }
-       ]
-   },
-   "webcredentials": {
-      "apps": [ "4A7WHUXQS6.co.phlox.eldo" ]
-   }
+    "apps": [],
+    "details": [
+      {
+        "appID": "4A7WHUXQS6.co.phlox.eldo",
+        "paths": [ "NOT /qa/*", "NOT /dev/*" , "/*" ]
+      },
+      {
+        "appID": "4A7WHUXQS6.co.phlox.eldoDev",
+        "paths": [ "/dev/*" ]
+      },
+      {
+        "appID": "4A7WHUXQS6.co.phlox.eldoQA",
+        "paths": [ "/qa/*" ]
+      }
+    ]
+  }
 }
