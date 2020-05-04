@@ -33,5 +33,8 @@
              ]
            }
        ]
+   },
+   "webcredentials": {
+      "apps": [ "4A7WHUXQS6.co.phlox.eldo" ]
    }
 }
