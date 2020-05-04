@@ -6,13 +6,11 @@
              "components": [
                {
                   "/": "/qa/*",
-                  "exclude": true,
-                  "comment": "Matches any URL whose path starts with /qa/ and instructs the system not to open it as a universal link"
+                  "exclude": true
                },
                {
                   "/": "/dev/*",
-                  "exclude": true,
-                  "comment": "Matches any URL whose path starts with /dev/ and instructs the system not to open it as a universal link"
+                  "exclude": true
                }
              ]
            },
@@ -20,7 +18,7 @@
              "appIDs": [ "4A7WHUXQS6.co.phlox.eldoDev" ],
              "components": [
                {
-                  "/": "/dev/*",
+                  "/": "/dev/*"
                }
              ]
            },
@@ -28,7 +26,7 @@
              "appIDs": [ "4A7WHUXQS6.co.phlox.eldoQA" ],
              "components": [
                {
-                  "/": "/qa/*",
+                  "/": "/qa/*"
                }
              ]
            }
