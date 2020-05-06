@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "4A7WHUXQS6.co.phlox.eldo",
+        "paths": [ "NOT /qa/*", "NOT /dev/*" , "/*" ]
+      },
+      {
+        "appID": "4A7WHUXQS6.co.phlox.eldoDev",
+        "paths": [ "/dev/*" ]
+      },
+      {
+        "appID": "4A7WHUXQS6.co.phlox.eldoQA",
+        "paths": [ "/qa/*" ]
+      }
+    ]
+  }
+}
