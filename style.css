@@ -43,6 +43,7 @@ html, body{
        url('../fonts/noto-sans-kr-v11-korean_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+
 body {
   background-color: #000;
   overflow: scroll;
@@ -74,7 +75,7 @@ body {
 .footer{
   margin-top: auto;
   height: 50rem;
-  background-color: #000; border-top: 0.1rem solid #dbdbdb;
+  background-color: #000; border-top: 0.1rem solid rgba(255,255,255,0.3);
 }
 
 /*gnb 블록 설정*/
@@ -83,36 +84,37 @@ body {
 .gnb-right { margin-left:auto; flex-direction: row-reverse; background-color: white;} /*아이템 오른 정렬*/
 .gnb-logo, .gnb-download, .gnb-menu { padding: 0rem 2.4rem;} /* 로고, 다운로드버튼, 메뉴 컨테이너 패딩 설정 */
 /*gnb 아이템 ()로고, 다운로드 버튼, 폰트) 스타일링*/
-.logo{ height: 3rem;} /*로고 이미지 높이 */
-.appstore { height:4rem;} /*앱스토어 이미지 높이 */
-.gnb-menu{font-size:1.6rem;} /*메뉴 크기*/
+.logo{ height: 2rem;} /*로고 이미지 높이 */
+.appstore { height:3.4rem;} /*앱스토어 이미지 높이 */
+.gnb-menu{font-size:1.4rem;} /*메뉴 크기*/
 
 /*body 블록 설정*/
 .body-header, .body-contents, .body-download {display:flex; flex-direction: column; align-items: center;}
-.body-header1{font-size: 3.6rem; padding-top:4rem;}
-.body-header2{font-size: 2rem; padding:0.3rem 0 3.6rem 0;}
+.body-header1{font-size: 3.4rem; padding-top:4rem;}
+.body-header2{font-size: 1.6rem; padding:0.5rem 0 3.6rem 0;}
 .body-contents{flex-direction: row;}
 .body-bg-01 {height: 54rem; width: 100%; background-image: url('img/bg.jpg'); background-size: cover;}
 
 .body-download {background-color: #000; padding:3.6rem 0 4rem 0;}
 .body-download-buttons {justify-content: center; padding-top:1.4rem;}
-.body-download .appstore{height: 6rem; margin:0 1rem;}
-.body-header3{color:#fff; font-size: 2rem;}
+.body-download .appstore{height: 4rem; margin:0 1rem;}
+.body-header3{color:#fff; font-size: 1.4rem;}
 
 /*footer 블록 설정*/
 .footer-left, .footer-right {display: flex; align-items:flex-start; padding-top:5rem;}
 .footer-left {margin-right: auto; padding-left: 6rem;}
 .footer-right {margin-left: auto; padding-right:10rem;}
 
-.footer-menu {display:flex; flex-direction: column; padding:1rem;}
-.footer-menu-item {padding-left: 10rem; padding-bottom: 2rem; font-size: 1.6rem; color: #fff;}
-.footer .text{color:#fff; font-size:1.6rem; line-height: 3.2rem; opacity: 0.5;}
+.footer-menu {display:flex; flex-direction: column; padding:1rem; padding-left: 0rem; }
+.footer-menu-item {padding-left: 10rem; padding-bottom: 2rem; font-size: 1.2rem; color: #fff;}
+.footer .text{color:#fff; font-size:1.2rem; line-height: 3.2rem; opacity: 0.5;}
 
 
 /*ol, ul 스타일링*/
 #terms .body, #privacypolicy .body {flex-direction: row; align-items:flex-start;}
 .body-subheader {flex: 0 0 auto; width:24rem; font-size:2.4rem; padding:6rem;}
-.body-subcontents {font-size:1.6rem; line-height: 3.2rem; opacity:0.9; padding: 6rem 16rem 16rem 0;}
+.body-subcontents {font-size:1.6rem; line-height: 3.2rem; opacity:0.9; padding: 4.3rem 16rem 16rem 0;}
+#terms .body-subcontents {padding-top: 1.6rem;} /*매뉴얼로 바꿨어요... 슬프다*/
 h2, h3 {padding: 1rem 0rem 1rem 3rem;}
 h2.font-bold {padding-bottom: 1rem; padding-top: 4rem;}
 h2>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-position: inside; padding:1rem 0;}
@@ -121,3 +123,17 @@ h2>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
 h3>ul>li {display: list-item; list-style-type: disc; list-style-position: inside;}
 h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-position: inside; padding:0.5rem 0;}
 .privacyimg {width: 60rem; padding:1rem 0;}
+
+
+/*responsive
+@media (max-width: 430px) {
+@media (max-width: 800px), (orientation: portrait) {
+*/
+@media (max-width: 768px) {
+  #terms .body, #privacypolicy .body {flex-direction: column;}
+  #terms h2, #privacypolicy h2 {padding: 1rem 3rem;}
+  .body-subcontents {padding: 0; padding-bottom: 10rem;}
+  .body-subheader {padding: 6rem 3rem 2rem;}
+  .footer-left {padding-left: 3rem;}
+  .footer-menu-item {padding-left:6rem;}
+}
