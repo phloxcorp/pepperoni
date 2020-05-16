@@ -137,3 +137,10 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
   .footer-left {padding-left: 3rem;}
   .footer-menu-item {padding-left:6rem;}
 }
+
+@media (max-width:425px) {
+  html, body{ font-size:5px;}
+  .gnb {border-bottom: 0.2rem solid #dbdbdb;}
+  .footer-right {padding-right: 3rem;}
+  .footer-menu-item{width: 24rem; text-align: left;}
+}
