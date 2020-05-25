@@ -1,3 +1,30 @@
 <html>
-<meta http-equiv="refresh" content="0; url=https://www.pepperoni.co.kr">
+<body>
+    <script>
+    function redirection() {
+        var currentPath = window.location.href;
+        var pepperoniQA = "https://www.pepperoni.co.kr/qa/";
+        var pepperoniProduction = "https://www.pepperoni.co.kr/";
+        var redirectTo = "https://www.pepperoni.co.kr";
+        var appstoreLink = "itms-apps://apps.apple.com/kr/app/페퍼로니-가장-핫한-영상-쇼핑/id1509371929";
+        var iOS = !!navigator.platform && /iPhone/.test(navigator.platform);
+
+        if (!iOS) {
+            window.location.replace(redirectTo);
+            return;
+        }
+
+        if (currentPath.includes(pepperoniQA)) {
+            redirectTo = "pepperoniqa://" + currentPath.substring(pepperoniQA.length);
+        } else if (currentPath.includes(pepperoniProduction)) {
+            redirectTo = "pepperoni://" + currentPath.substring(pepperoniProduction.length);
+        }
+        window.location.replace(redirectTo);
+        this.timer = setTimeout(() => {
+            window.location.replace(appstoreLink);
+        }, 1000);
+    }
+    window.onload = redirection
+    </script>
+</body>
 </html>
