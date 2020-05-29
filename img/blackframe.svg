@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 414 851" style="enable-background:new 0 0 414 851;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:url(#Combined-Shape_1_);}
+</style>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="검폰">
+		
+			<linearGradient id="Combined-Shape_1_" gradientUnits="userSpaceOnUse" x1="-97.2633" y1="821.5353" x2="-97.2633" y2="821.0353" gradientTransform="matrix(414 0 0 -851 40474 699552)">
+			<stop  offset="0" style="stop-color:#282828"/>
+			<stop  offset="1" style="stop-color:#282828"/>
+		</linearGradient>
+		<path id="Combined-Shape" class="st0" d="M356,0c32,0,58,26,58,58v735c0,32-26,58-58,58H58c-32,0-58-26-58-58V58C0,26,26,0,58,0
+			H356z M96,20H58l0,0c-20.8,0-38,17.2-38,38v736c0,20.8,17.2,38,38,38h299c20.8,0,38-17.2,38-38V58c0-20.8-17.2-38-38-38h-39
+			c-3.3,0-6,2.7-6,6v1c0.3,13.4-10.4,24.2-24,24H126c-13.8,0.2-24.5-10.6-24-24v-1C102,22.7,99.3,20,96,20z"/>
+	</g>
+</g>
+</svg>

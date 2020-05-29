@@ -2,51 +2,20 @@
 
 html, body{
   font-family: 'Noto Sans KR';
-  font-size: 10px; width: 100%; height: 100%;
+  font-size: 10px; width: 100%; height: 100vh;
   -ms-overflow-style: none; // IE에서 스크롤바 감춤
   &::-webkit-scrollbar {
     display: none !important; // 윈도우 크롬 등
   }
   }
 
-/* noto-sans-kr-300 - korean_latin */
+
 @font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 300;
-  src: url('../fonts/noto-sans-kr-v11-korean_latin-300.eot'); /* IE9 Compat Modes */
-  src: local('Noto Sans KR Light'), local('NotoSansKR-Light'),
-      url('../fonts/noto-sans-kr-v11-korean_latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/noto-sans-kr-v11-korean_latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/noto-sans-kr-v11-korean_latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* noto-sans-kr-regular - korean_latin */
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../fonts/noto-sans-kr-v11-korean_latin-regular.eot'); /* IE9 Compat Modes */
-  src: local('Noto Sans KR Regular'), local('NotoSansKR-Regular'),
-       url('../fonts/noto-sans-kr-v11-korean_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/noto-sans-kr-v11-korean_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/noto-sans-kr-v11-korean_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-/* noto-sans-kr-700 - korean_latin */
-@font-face {
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../fonts/noto-sans-kr-v11-korean_latin-700.eot'); /* IE9 Compat Modes */
-  src: local('Noto Sans KR Bold'), local('NotoSansKR-Bold'),
-       url('../fonts/noto-sans-kr-v11-korean_latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/noto-sans-kr-v11-korean_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('../fonts/noto-sans-kr-v11-korean_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
+font-family: 'Noto Sans KR', sans-serif;}
 
 
 body {
   background-color: #000;
-  overflow: scroll;
   -webkit-overflow-scrolling:touch;
 }
 
@@ -67,6 +36,9 @@ body {
 .gnb {
   height:8rem; z-index: 10;
   background-color: #fff; border-bottom: 0.1rem solid #dbdbdb;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 .body{
   flex-direction: column;
@@ -74,8 +46,8 @@ body {
 }
 .footer{
   margin-top: auto;
-  height: 50rem;
-  background-color: #000; border-top: 0.1rem solid rgba(255,255,255,0.3);
+  height: calc(100vh - 20rem);
+  background-color: #000; border-top: 0.1rem solid #ffffff30;
 }
 
 /*gnb 블록 설정*/
@@ -87,28 +59,79 @@ body {
 .logo{ height: 2rem;} /*로고 이미지 높이 */
 .appstore { height:3.4rem;} /*앱스토어 이미지 높이 */
 .gnb-menu{font-size:1.4rem;} /*메뉴 크기*/
+/*app-open 모바일에서 띄우기*/
+.app-open{display: flex; align-items: center; height: 10rem;}
+.app-open>a{margin:auto;}
+.app-open-button {
+  height: 6rem; width:20rem;
+  color:white; font-size: 2rem;
+  border-radius: 1rem; border: 0.2rem solid #fff;
+}
 
 /*body 블록 설정*/
 .body-header, .body-contents, .body-download {display:flex; flex-direction: column; align-items: center;}
-.body-header1{font-size: 3.4rem; padding-top:4rem;}
-.body-header2{font-size: 1.6rem; padding:0.5rem 0 3.6rem 0;}
+.body-header1{font-size: 3.4rem; padding-top:2.4rem;}
+.body-header2{font-size: 1.6rem; padding:0.5rem 0 2.4rem 0;}
 .body-contents{flex-direction: row;}
 .body-bg-01 {height: 54rem; width: 100%; background-image: url('img/bg.jpg'); background-size: cover;}
+.body-bg-02 {
+    height: calc(100vh - 32.5rem); width: 20%;
+    object-fit: cover;}
 
-.body-download {background-color: #000; padding:3.6rem 0 4rem 0;}
+.body-download {background-color: #000; padding: 2rem; border-top: 0.1rem solid #ffffff30;}
 .body-download-buttons {justify-content: center; padding-top:1.4rem;}
 .body-download .appstore{height: 4rem; margin:0 1rem;}
 .body-header3{color:#fff; font-size: 1.4rem;}
+
+/*body 하단 콘텐츠 추가*/
+.body-apppreview {display:flex;  }
+.body-left{margin-right: auto; margin-left: 20rem; margin-top:calc(50vh - 19rem);}
+.body-right{margin-left:auto; margin-right:calc(25vw - 13vh);}
+.blackframe {
+    position: relative;
+    height: calc(80vh); margin-top: calc(10vh - 4rem);
+}
+#el.body-right{position:relative; margin-right: calc(25vw - 25vh);}
+.ads000{
+    position: absolute;
+    height: calc(77vh); margin-top: calc(11.5vh - 4rem);
+    border-radius: calc(2vh); margin-left: calc(1.75vh);
+}
+.body-header4{font-size: 3.6rem; position: relative; z-index: 1; width: max-content}
+.body-header4::after{
+    content: "";
+    left: 0; top: 8rem;
+    height: 2rem; width: 100%;
+    background: #fa6238;
+    position: absolute;
+    z-index: -1;
+  }
+.body-contents4{font-size: 1.6rem; padding-top:2rem; line-height: 3rem;}
+.body-adspreview {display:flex;  }
+.body-adspreview .body-header4::after {top: 14rem;}
+.body-full-ads {display:flex; position: relative; background-color: black;}
+.body-full-ads-contents {
+    position: absolute;
+    top: calc(50vh - 17rem); right: calc(6vw);
+  }
+.white {color:#2b2725}
+.ads001, .ads002{height: calc(100vh - 8rem); width: 100%; object-fit: cover;}
+.body-full-ads .body-header4::after{width: 10rem;}
+.whiteframe{
+  position:absolute;
+  width: calc(42vh);
+  left: calc(50vw - 21vh); top: calc(7.5vh - 4rem);
+}
+.ads004{width:calc(64vh); border-radius: 2rem;}
 
 /*footer 블록 설정*/
 .footer-left, .footer-right {display: flex; align-items:flex-start; padding-top:5rem;}
 .footer-left {margin-right: auto; padding-left: 6rem;}
 .footer-right {margin-left: auto; padding-right:10rem;}
-
 .footer-menu {display:flex; flex-direction: column; padding:1rem; padding-left: 0rem; }
 .footer-menu-item {padding-left: 10rem; padding-bottom: 2rem; font-size: 1.2rem; color: #fff;}
 .footer .text{color:#fff; font-size:1.2rem; line-height: 3.2rem; opacity: 0.5;}
-
+.body-end{background-color:#000;}
 
 /*ol, ul 스타일링*/
 #terms .body, #privacypolicy .body {flex-direction: row; align-items:flex-start;}
@@ -125,11 +148,70 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
 .privacyimg {width: 60rem; padding:1rem 0;}
 
 
-/*responsive
-@media (max-width: 430px) {
-@media (max-width: 800px), (orientation: portrait) {
-*/
-@media (max-width: 768px) {
+/* swiper */
+.wrapper1 {display: flex; flex-direction: column; height: 100vh;}
+.swiper1 {
+        width: 100%; height: calc(100vh - 8rem);
+        margin-left: auto;
+        margin-right: auto;
+}
+.swiper-pagination-bullet-active {background: black !important; }
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {margin: 12px 0 !important;}
+.swiper-container-vertical>.swiper-pagination-bullets .swiper-pagination-bullet {width: 6px !important; height: 6px !important;}
+.swiper-button-next:focus, .swiper-button-prev:focus {outline-style: none;}
+
+.swiper2 { width: calc(64vh); margin-top: calc(10vh - 4rem);}
+.swiper-button-next, .swiper-button-prev { color: #ffffff80 !important; }
+.swiper-button-next:after, .swiper-button-prev:after {font-size: 2rem !important; }
+
+.swyi__page1 {
+  display: grid;
+  height: calc(100vh - 8rem) !important;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+/*기본 웹 767보다 크고 landscape 일 경우*/
+@media (min-width:767) and (orientation:landscape){
+    html, body{ font-size:8px;}
+    .body-left{margin-left: 10rem;}
+    .body-full-ads-contents {right: calc(100vw/40);}
+    .swiper2{width: calc(55vh); margin-top: calc(16vh - 4rem);}
+    .ads004{width: calc(55vh);}
+}
+/*기본 모바일 767보다 작은 경우 */
+@media (max-width:767px){
+   html, body{ font-size:5px;}
+  .gnb {border-bottom: 0.2rem solid #dbdbdb;}
+  .body-bg-02{width:100%; height:100%; object-fit: cover;}
+  .body-apppreview{flex-direction: column;}
+  .swyi_page1{position:relative;}
+  .body-header-mobile{position: absolute;}
+  .body-header{color:#fff; font-size:5.4rem; text-align: center;}
+  .body-download-buttons{text-align: center;}
+  .mobile .appstore{height: 8rem;}
+  .body-header-mobile {top: 40%; left: calc(50vw - 23.5rem);}
+  .body-contents{height:calc(100vh - 8rem); width:100vw;}
+  .body-header4{font-size: 5.6rem; line-height: 7rem;}
+  .body-header4::after{top: 18rem; height: 3rem;}
+  .body-contents4{ font-size: 2.8rem; line-height: 4.2rem; color: #00000090;}
+  .body-left, .body-right {margin:0;}
+  .body-left{padding-top: calc(50vh - 30rem); padding-left: calc(50vw - 19.5vh);}
+  .body-right{padding-left: calc(50vw - 20vh);}
+  .body-full-ads-contents .body-contents4{color: #fff; text-shadow: 0.1rem 0.1rem 0.5rem #00000090;}
+  .white {color: #fff;}
+  .body-full-ads-contents {right: unset; padding-left: calc(50vw - 19.5vh); top: calc(50vh - 33rem);}
+  .body-full-ads-contents .body-header4::after {width: 16rem; top: 11rem; height: 3rem;}
+  #el.body-header4::after{top: 11rem;}
+  #el.body-right{padding:0; background-color: #000;}
+  .ads004 {width: 100vw; border-radius:0;}
+  .swiper2 { width: 100vw; display: flex; margin:unset; }
+  .swiper-button-next:after, .swiper-button-prev:after {font-size: 4rem !important; }
+  .body-adspreview {display: block;}
+  #el, #el .swiper-slide{display: flex;}
+  .logo{height: 3rem; margin-top: 0.8rem;}
+  .footer-right {padding-right: 3rem;}
+  .footer-menu-item{width: 24rem; text-align: left;}
+
   #terms .body, #privacypolicy .body {flex-direction: column;}
   #terms h2, #privacypolicy h2 {padding: 1rem 3rem;}
   .body-subcontents {padding: 0; padding-bottom: 10rem;}
@@ -137,10 +219,62 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
   .footer-left {padding-left: 3rem;}
   .footer-menu-item {padding-left:6rem;}
 }
+@media (max-width:320px){
+  html, body{ font-size:4px;}
+}
+/*타블렛 767보다 크고 portrait 일 경우*/
+@media (min-width:767px) and (orientation : portrait){
+  html, body{ font-size: 12px;}
+ .body-bg-02{width:100%; height:100%; object-fit: cover;}
+ .gnb {border-bottom: 0.2rem solid #dbdbdb;}
+ .body-bg-02{width:100%; height:100%; object-fit: cover;}
+ .swyi_page1{position:relative;}
+ .body-header-mobile{position: absolute; top: calc(50vh - 12rem); left: calc(50vw - 15.5rem);}
+ .body-header{color:#fff; font-size:3.4rem; text-align: center;}
+ .body-header4{font-size: 2.6rem;}
+ .body-header4::after {top: 9.5rem;}
+ .body-full-ads-contents .body-header4::after {width: 7.5rem; top: 6rem;}
+  #el.body-header4::after{top: 9.5rem; width:11rem;}
+ .body-download-buttons{text-align: center;}
+ .body-left{margin-left: 4rem; margin-right: 1rem; margin-top:calc(50vh - 24.5rem);}
+ .body-contents4{font-size: 1.4rem; width: 27vw;}
+ .blackframe{height: calc(101vw); margin-top: calc(50vh - 56.2vw);}
+ .ads000{height: calc(97.5vw); margin-top: calc(50vh - 54vw); margin-left: calc(2vw);}
+ .body-right{margin-right:calc(12vw - 2rem);}
+ .tablet .appstore{height: 5rem;}
+ .body-contents{height:calc(100vh - 8rem); width:100vw;}
+ .swiper2{width: 60vw;margin-top: calc(50vh - 46vw);}
+ .ads004{width: 60vw;}
+ #el.body-right{margin-right: calc(4vw);}
+ .body-full-ads-contents .body-contents4{
+   color: #fff; font-weight: 400; text-shadow: 0.1rem 0.1rem 0.1rem #00000090;}
+ .white {color: #fff;}
+ .ads001{object-fit: contain;}
 
-@media (max-width:425px) {
-  html, body{ font-size:5px;}
-  .gnb {border-bottom: 0.2rem solid #dbdbdb;}
-  .footer-right {padding-right: 3rem;}
-  .footer-menu-item{width: 24rem; text-align: left;}
+ #terms .body, #privacypolicy .body {flex-direction: column;}
+ #terms h2, #privacypolicy h2 {padding: 1rem 3rem;}
+ .body-subcontents {padding: 0; padding-bottom: 10rem;}
+ .body-subheader {padding: 6rem 3rem 2rem;}
+ .footer-left {padding-left: 3rem;}
+ .footer-menu-item {padding-left:6rem;}
+ .footer-right{ padding-right: 3rem; width: 40vw;}
+}
+/*타블렛과 웹 크기만 조정*/
+@media (max-width: 1440px) and (min-width:1024px) and (orientation : landscape) {
+  .body-left{margin-left: 16rem;}
+}
+@media (max-width: 1440px) and (min-width:1024px) and (orientation : portrait) {
+  .body-left{margin-left: 5rem;}
+}
+@media (min-width:1440px){
+  html, body{font-size : 12px;}
+}
+@media (min-width:2560px){
+  html, body{font-size : 20px;}
+}
+@media (min-width:1440px) and (orientation : portrait){
+  html, body{font-size:20px;}
+  .body-contents4{width: 20vw;}
+  .footer-right{ padding-right: 3rem; width: 40vw;}
+  .body-left{margin-left:6rem;}
 }
