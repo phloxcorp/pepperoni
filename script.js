@@ -1,3 +1,27 @@
+function playHls(id, path) {
+  if (Hls.isSupported()) {
+    var video = document.getElementById(id);
+    var hls = new Hls();
+    hls.attachMedia(video);
+    hls.on(Hls.Events.MEDIA_ATTACHED, function () {
+      hls.loadSource(path);
+    });
+  }
+}
+
+playHls('ads000', './hls/ads001.m3u8')
+playHls('ads001', './hls/ads001.m3u8')
+playHls('ads002', './hls/ads002.m3u8')
+playHls('ads003', './hls/ads003.m3u8')
+playHls('ads004', './hls/ads004.m3u8')
+playHls('ads005', './hls/ads005.m3u8')
+playHls('ads006', './hls/ads006.m3u8')
+playHls('creator001', './hls/creator001.m3u8')
+playHls('creator002', './hls/creator002.m3u8')
+playHls('creator003', './hls/creator003.m3u8')
+playHls('creator004', './hls/creator004.m3u8')
+playHls('creator005', './hls/creator005.m3u8')
+
 var userWidth = $(window).width();
 //var userHeight = $(window).height();
 var isWeb = new Boolean(true);
@@ -108,27 +132,3 @@ new Swiper ('.swiper2', {
     prevEl: '.swiper-button-prev',
   },
 });
-
-function playHls(id, path) {
-  if (Hls.isSupported()) {
-    var video = document.getElementById(id);
-    var hls = new Hls();
-    hls.attachMedia(video);
-    hls.on(Hls.Events.MEDIA_ATTACHED, function () {
-      hls.loadSource(path);
-    });
-  }
-}
-
-playHls('ads000', './hls/ads001.m3u8')
-playHls('ads001', './hls/ads001.m3u8')
-playHls('ads002', './hls/ads002.m3u8')
-playHls('ads003', './hls/ads003.m3u8')
-playHls('ads004', './hls/ads004.m3u8')
-playHls('ads005', './hls/ads005.m3u8')
-playHls('ads006', './hls/ads006.m3u8')
-playHls('creator001', './hls/creator001.m3u8')
-playHls('creator002', './hls/creator002.m3u8')
-playHls('creator003', './hls/creator003.m3u8')
-playHls('creator004', './hls/creator004.m3u8')
-playHls('creator005', './hls/creator005.m3u8')
