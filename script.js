@@ -9,7 +9,7 @@ function playHls(id, path) {
   }
 }
 
-playHls('ads000', './hls/ads001.m3u8')
+playHls('ads000', './hls/ads000.m3u8')
 playHls('ads001', './hls/ads001.m3u8')
 playHls('ads002', './hls/ads002.m3u8')
 playHls('ads003', './hls/ads003.m3u8')
