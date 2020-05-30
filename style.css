@@ -212,10 +212,9 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
   #el.body-right{padding:0; background-color: #000;}
   .ads004 {width: 100vw; border-radius:0;}
   .swiper2 { width: 100vw; display: flex; margin:unset; }
-  .swiper-slide{padding-bottom:clac(var(--vh, 1vh) * 50 - 50vh);}
   .swiper-button-next:after, .swiper-button-prev:after {font-size: 4rem !important; }
   .body-adspreview {display: block;}
-  #el, #el .swiper-slide{display: flex; height:var(--vh, 1vh) * 100;}
+  #el, #el .swiper-slide{display: flex; height:var(--vh, 1vh) * 100; padding-bottom:clac(var(--vh, 1vh) * 50 - 50vh);}
   .logo{height: 3rem; margin-top: 0.8rem;}
   .footer-right {padding-right: 3rem;}
   .footer-menu-item{width: 24rem; text-align: left;}
