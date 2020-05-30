@@ -214,6 +214,7 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
   .logo{height: 3rem; margin-top: 0.8rem;}
   .footer-right {padding-right: 3rem;}
   .footer-menu-item{width: 24rem; text-align: left;}
+  #el.body-header4{height:unset;}
 
   #terms .body, #privacypolicy .body {flex-direction: column;}
   #terms h2, #privacypolicy h2 {padding: 1rem 3rem;}
