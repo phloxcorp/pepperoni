@@ -230,7 +230,7 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
   html, body{ font-size: 12px;}
  .ads000{ margin-top: calc(var(--vh, 1vh) * 10 - 4rem);}
  .blackframe{ margin-top: calc(var(--vh, 1vh) * 8.5 - 4rem);}
- .body-bg-02{width:100vw; height:var(--vh, 1vh) * 100; object-fit: cover;}
+ .body-bg-02{width:100vw; height:calc((var(--vh, 1vh) * 100) - 8rem); object-fit: cover;}
  .gnb {border-bottom: 0.2rem solid #dbdbdb;}
  .swyi_page1{position:relative;}
  .body-header-mobile{position: absolute; top: calc(var(--vh, 1vh) * 50 - 12rem); left: calc(50vw - 15.5rem);}
