@@ -240,21 +240,21 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
  .body-full-ads-contents .body-header4::after {width: 7.5rem; top: 6rem;}
   #el.body-header4::after{top: 9.5rem; width:11rem;}
  .body-download-buttons{text-align: center;}
- .body-left{margin-left: 4rem; margin-right: 1rem; margin-top:calc(var(--vh, 1vh) * 50 - 24.5rem);}
+ .body-left{margin-left: 4rem; margin-right: 1rem; margin-top:calc(50vh - 24.5rem);}
  .body-contents4{font-size: 1.4rem; width: 27vw;}
  .blackframe{height: calc(101vw); margin-top: calc(var(--vh, 1vh) * 50 - 56.2vw);}
  .ads000{height: calc(97.5vw); margin-top: calc(var(--vh, 1vh) * 50 - 54vw); margin-left: calc(2vw);}
  .body-right{margin-right:calc(12vw - 2rem);}
  .tablet .appstore{height: 5rem;}
  .body-contents{height:calc(100vh - 8rem); width:100vw;}
- .swiper2{width: 60vw;}
+ .swiper2{width: 60vw;margin-top: calc(50vh - 46vw);}
  .ads004{width: 60vw;}
  #el.body-right{margin-right: calc(4vw);}
  .body-full-ads-contents .body-contents4{
    color: #fff; font-weight: 400; text-shadow: 0.1rem 0.1rem 0.1rem #00000090;}
  .white {color: #fff;}
  .ads001{object-fit: contain;}
- #el, #el .swiper-slide{display: flex; }
+ #el, #el .swiper-slide{display: flex;}
  #el .swiper-slide{margin-bottom:calc((var(--vh, 1vh) * 50) - 50vh);}
 
  #terms .body, #privacypolicy .body {flex-direction: column;}
