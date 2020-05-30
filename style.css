@@ -184,11 +184,9 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
   .gnb {border-bottom: 0.2rem solid #dbdbdb;}
   .swiper1{height:calc(var(--vh, 1vh) * 100 - 8rem);}
   .ads000{
-    height: calc(var(--vh, 1vh) * 77);
     margin-top: calc(var(--vh, 1vh) * 10 - 4rem);
   }
   .blackframe{
-    height: calc(var(--vh, 1vh) *  80);
     margin-top: calc(var(--vh, 1vh) * 8.5 - 4rem);
   }
   .body-bg-02{width:100vw; height:calc(var(--vh, 1vh) * 100 - 8rem); object-fit: cover;}
