@@ -256,6 +256,7 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
  .ads001{object-fit: contain;}
  #el, #el .swiper-slide{display: flex;}
  #el .swiper-slide{margin-bottom:calc((var(--vh, 1vh) * 50) - 50vh);}
+ .swiper-button-next, .swiper-button-prev {top: calc(50vh - 28vw);}
 
  #terms .body, #privacypolicy .body {flex-direction: column;}
  #terms h2, #privacypolicy h2 {padding: 1rem 3rem;}
