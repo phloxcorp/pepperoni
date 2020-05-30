@@ -285,5 +285,5 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
   .body-contents4{width: 20vw;}
   .footer-right{ padding-right: 3rem; width: 40vw;}
   .body-left{margin-left:6rem;}
-  .swiper-button-next, .swiper-button-prev {top: calc(50vh - 28vw) !important;
+  .swiper-button-next, .swiper-button-prev {top: calc(50vh - 28vw) !important;}
 }
