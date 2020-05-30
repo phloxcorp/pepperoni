@@ -247,14 +247,14 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
  .body-right{margin-right:calc(12vw - 2rem);}
  .tablet .appstore{height: 5rem;}
  .body-contents{height:calc(100vh - 8rem); width:100vw;}
- .swiper2{width: 60vw;margin-top: calc(var(--vh, 1vh) * 50 - 46vw);}
+ .swiper2{width: 60vw;}
  .ads004{width: 60vw;}
  #el.body-right{margin-right: calc(4vw);}
  .body-full-ads-contents .body-contents4{
    color: #fff; font-weight: 400; text-shadow: 0.1rem 0.1rem 0.1rem #00000090;}
  .white {color: #fff;}
  .ads001{object-fit: contain;}
- #el, #el .swiper-slide{display: flex; height:calc(var(--vh, 1vh) * 100);}
+ #el, #el .swiper-slide{display: flex; }
  #el .swiper-slide{margin-bottom:calc((var(--vh, 1vh) * 50) - 50vh);}
 
  #terms .body, #privacypolicy .body {flex-direction: column;}
