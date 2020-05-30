@@ -228,6 +228,8 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
 /*타블렛 767보다 크고 portrait 일 경우*/
 @media (min-width:767px) and (orientation : portrait){
   html, body{ font-size: 12px;}
+ .ads000{ margin-top: calc(var(--vh, 1vh) * 10 - 4rem);}
+ .blackframe{ margin-top: calc(var(--vh, 1vh) * 8.5 - 4rem);}
  .body-bg-02{width:100vw; height:var(--vh, 1vh) * 100; object-fit: cover;}
  .gnb {border-bottom: 0.2rem solid #dbdbdb;}
  .swyi_page1{position:relative;}
@@ -252,6 +254,8 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
    color: #fff; font-weight: 400; text-shadow: 0.1rem 0.1rem 0.1rem #00000090;}
  .white {color: #fff;}
  .ads001{object-fit: contain;}
+ #el, #el .swiper-slide{display: flex; height:calc(var(--vh, 1vh) * 100);}
+ #el .swiper-slide{margin-bottom:calc((var(--vh, 1vh) * 50) - 50vh);}
 
  #terms .body, #privacypolicy .body {flex-direction: column;}
  #terms h2, #privacypolicy h2 {padding: 1rem 3rem;}
