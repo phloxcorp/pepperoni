@@ -272,7 +272,6 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
 }
 @media (max-width: 1440px) and (min-width:1024px) and (orientation : portrait) {
   .body-left{margin-left: 5rem;}
-   .swiper-button-next, .swiper-button-prev {top: calc(50vh - 28vw) !important;}
 }
 @media (min-width:1440px){
   html, body{font-size : 12px;}
@@ -285,5 +284,4 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
   .body-contents4{width: 20vw;}
   .footer-right{ padding-right: 3rem; width: 40vw;}
   .body-left{margin-left:6rem;}
-  .swiper-button-next, .swiper-button-prev {top: calc(50vh - 28vw) !important;}
 }
