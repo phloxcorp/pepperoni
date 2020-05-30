@@ -22,6 +22,10 @@ playHls('creator003', './hls/creator003.m3u8')
 playHls('creator004', './hls/creator004.m3u8')
 playHls('creator005', './hls/creator005.m3u8')
 
+//모바일 시 하단 바로 인해 뷰포트 크기가 100vh가 아닌경우 처리
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
 var userWidth = $(window).width();
 //var userHeight = $(window).height();
 var isWeb = new Boolean(true);
