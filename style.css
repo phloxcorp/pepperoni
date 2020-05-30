@@ -182,24 +182,32 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
 @media (max-width:767px){
    html, body{ font-size:5px;}
   .gnb {border-bottom: 0.2rem solid #dbdbdb;}
-  .body-bg-02{width:100vw; height:calc(100vh - 8rem); object-fit: cover;}
+  .ads000{
+    height: calc(var(--vh, 1vh) * 77);
+    margin-top: calc(var(--vh, 1vh) * 6.5 - 4rem);
+  }
+  .blackframe{
+    height: calc(var(--vh, 1vh) *  80);
+    margin-top: calc(var(--vh, 1vh) * 5 - 4rem);
+  }
+  .body-bg-02{width:100vw; height:calc(var(--vh, 1vh) * 100 - 8rem); object-fit: cover;}
   .body-apppreview{flex-direction: column;}
   .swyi_page1{position:relative;}
   .body-header-mobile{position: absolute;}
   .body-header{color:#fff; font-size:5.4rem; text-align: center;}
   .body-download-buttons{text-align: center;}
   .mobile .appstore{height: 8rem;}
-  .body-header-mobile {top: 40%; left: calc(50vw - 23.5rem);}
-  .body-contents{height:calc(100vh - 8rem); width:100vw;}
+  .body-header-mobile {top: calc(var(--vh, 1vh) * 40); left: calc(50vw - 23.5rem);}
+  .body-contents{height:calc(var(--vh, 1vh) * 100 - 8rem); width:100vw;}
   .body-header4{font-size: 5.6rem; line-height: 7rem;}
   .body-header4::after{top: 18rem; height: 3rem;}
   .body-contents4{ font-size: 2.8rem; line-height: 4.2rem; color: #00000090;}
   .body-left, .body-right {margin:0;}
-  .body-left{padding-top: calc(50vh - 30rem); padding-left: calc(50vw - 19.5vh);}
+  .body-left{padding-top: calc(var(--vh, 1vh) * 50 - 30rem); padding-left: calc(50vw - 19.5vh);}
   .body-right{padding-left: calc(50vw - 20vh);}
   .body-full-ads-contents .body-contents4{color: #fff; text-shadow: 0.1rem 0.1rem 0.5rem #00000090;}
   .white {color: #fff;}
-  .body-full-ads-contents {right: unset; padding-left: calc(50vw - 19.5vh); top: calc(50vh - 33rem);}
+  .body-full-ads-contents {right: unset; padding-left: calc(50vw - 19.5vh); top: calc(var(--vh, 1vh) * 50 - 33rem);}
   .body-full-ads-contents .body-header4::after {width: 16rem; top: 11rem; height: 3rem;}
   #el.body-header4::after{top: 11rem;}
   #el.body-right{padding:0; background-color: #000;}
@@ -207,7 +215,7 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
   .swiper2 { width: 100vw; display: flex; margin:unset; }
   .swiper-button-next:after, .swiper-button-prev:after {font-size: 4rem !important; }
   .body-adspreview {display: block;}
-  #el, #el .swiper-slide{display: flex;}
+  #el, #el .swiper-slide{display: flex; height:var(--vh, 1vh) * 100;}
   .logo{height: 3rem; margin-top: 0.8rem;}
   .footer-right {padding-right: 3rem;}
   .footer-menu-item{width: 24rem; text-align: left;}
@@ -225,24 +233,24 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
 /*타블렛 767보다 크고 portrait 일 경우*/
 @media (min-width:767px) and (orientation : portrait){
   html, body{ font-size: 12px;}
- .body-bg-02{width:100vw; height:100vh; object-fit: cover;}
+ .body-bg-02{width:100vw; height:var(--vh, 1vh) * 100; object-fit: cover;}
  .gnb {border-bottom: 0.2rem solid #dbdbdb;}
  .swyi_page1{position:relative;}
- .body-header-mobile{position: absolute; top: calc(50vh - 12rem); left: calc(50vw - 15.5rem);}
+ .body-header-mobile{position: absolute; top: calc(var(--vh, 1vh) * 50 - 12rem); left: calc(50vw - 15.5rem);}
  .body-header{color:#fff; font-size:3.4rem; text-align: center;}
  .body-header4{font-size: 2.6rem;}
  .body-header4::after {top: 9.5rem;}
  .body-full-ads-contents .body-header4::after {width: 7.5rem; top: 6rem;}
   #el.body-header4::after{top: 9.5rem; width:11rem;}
  .body-download-buttons{text-align: center;}
- .body-left{margin-left: 4rem; margin-right: 1rem; margin-top:calc(50vh - 24.5rem);}
+ .body-left{margin-left: 4rem; margin-right: 1rem; margin-top:calc(var(--vh, 1vh) * 50 - 24.5rem);}
  .body-contents4{font-size: 1.4rem; width: 27vw;}
- .blackframe{height: calc(101vw); margin-top: calc(50vh - 56.2vw);}
- .ads000{height: calc(97.5vw); margin-top: calc(50vh - 54vw); margin-left: calc(2vw);}
+ .blackframe{height: calc(101vw); margin-top: calc(var(--vh, 1vh) * 50 - 56.2vw);}
+ .ads000{height: calc(97.5vw); margin-top: calc(var(--vh, 1vh) * 50 - 54vw); margin-left: calc(2vw);}
  .body-right{margin-right:calc(12vw - 2rem);}
  .tablet .appstore{height: 5rem;}
  .body-contents{height:calc(100vh - 8rem); width:100vw;}
- .swiper2{width: 60vw;margin-top: calc(50vh - 46vw);}
+ .swiper2{width: 60vw;margin-top: calc(var(--vh, 1vh) * 50 - 46vw);}
  .ads004{width: 60vw;}
  #el.body-right{margin-right: calc(4vw);}
  .body-full-ads-contents .body-contents4{
