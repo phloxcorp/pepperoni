@@ -182,13 +182,8 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
 @media (max-width:767px){
    html, body{ font-size:5px;}
   .gnb {border-bottom: 0.2rem solid #dbdbdb;}
-
-  .ads000{
-    margin-top: calc(var(--vh, 1vh) * 10 - 4rem);
-  }
-  .blackframe{
-    margin-top: calc(var(--vh, 1vh) * 8.5 - 4rem);
-  }
+  .ads000{ margin-top: calc(var(--vh, 1vh) * 10 - 4rem);}
+  .blackframe{ margin-top: calc(var(--vh, 1vh) * 8.5 - 4rem);}
   .body-bg-02{width:100vw; height:calc(var(--vh, 1vh) * 100 - 8rem); object-fit: cover;}
   .body-apppreview{flex-direction: column;}
   .swyi_page1{position:relative;}
@@ -214,7 +209,8 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
   .swiper2 { width: 100vw; display: flex; margin:unset; }
   .swiper-button-next:after, .swiper-button-prev:after {font-size: 4rem !important; }
   .body-adspreview {display: block;}
-  #el, #el .swiper-slide{display: flex; height:var(--vh, 1vh) * 100;}
+  #el, #el .swiper-slide{display: flex; height:calc(var(--vh, 1vh) * 100);}
+  #el .swiper-slide{margin-bottom:calc(var(--vh, 1vh) * 50 - 50vh);}
   .logo{height: 3rem; margin-top: 0.8rem;}
   .footer-right {padding-right: 3rem;}
   .footer-menu-item{width: 24rem; text-align: left;}
