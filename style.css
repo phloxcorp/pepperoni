@@ -196,7 +196,7 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
   .body-contents4{ font-size: 2.8rem; line-height: 4.2rem; color: #00000090;}
   .body-left, .body-right {margin:0;}
   .body-left{padding-top: calc(var(--vh, 1vh) * 50 - 30rem); padding-left: calc(50vw - 19.5vh);}
-  .body-right{padding-left: calc(50vw - var(--vh, 1vh) * 20);}
+  .body-right{padding-left: calc(50vw - 20vh);}
   .body-full-ads-contents .body-contents4{color: #fff; text-shadow: 0.1rem 0.1rem 0.5rem #00000090;}
   .white {color: #fff;}
   .body-full-ads-contents {right: unset; padding-left: calc(50vw - 19.5vh); top: calc(var(--vh, 1vh) * 50 - 33rem);}
