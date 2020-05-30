@@ -248,7 +248,7 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
  .tablet .appstore{height: 5rem;}
  .body-contents{height:calc(100vh - 8rem); width:100vw;}
  .swiper2{width: 60vw;margin-top: calc(50vh - 46vw);}
- .ads004{width: 60vw;}
+ .ads004{width: 60vw;height: 74.8vw;margin-top: calc(50vh - 65vw);}
  #el.body-right{margin-right: calc(4vw);}
  .body-full-ads-contents .body-contents4{
    color: #fff; font-weight: 400; text-shadow: 0.1rem 0.1rem 0.1rem #00000090;}
