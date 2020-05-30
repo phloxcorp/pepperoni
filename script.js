@@ -115,7 +115,7 @@ var mySwiper = new Swiper('.swiper1', {
   direction: "vertical",
   slidesPerView: 1,
   spaceBetween: 0,
-  shortSwipes: false,
+  shortSwipes: true,
   mousewheel: true,
   pagination: {
     el: '.swiper-pagination',
