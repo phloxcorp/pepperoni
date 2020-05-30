@@ -207,7 +207,7 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
   .swiper2 { width: 100vw; display: flex; margin:unset; }
   .swiper-button-next:after, .swiper-button-prev:after {font-size: 4rem !important; }
   .body-adspreview {display: block;}
-  #el, #el .swiper-slide{display: flex;}
+  #el, #el .swiper-slide{display: flex; height:var(--vh, 1vh) * 100;}
   .logo{height: 3rem; margin-top: 0.8rem;}
   .footer-right {padding-right: 3rem;}
   .footer-menu-item{width: 24rem; text-align: left;}
