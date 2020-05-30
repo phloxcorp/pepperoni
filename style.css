@@ -182,7 +182,7 @@ h3>ol>li {display: list-item; list-style-type: decimal-leading-zero; list-style-
 @media (max-width:767px){
    html, body{ font-size:5px;}
   .gnb {border-bottom: 0.2rem solid #dbdbdb;}
-  .body-bg-02{width:100vw; height:100vh; object-fit: cover;}
+  .body-bg-02{width:100vw; height:calc(100vh - 8rem); object-fit: cover;}
   .body-apppreview{flex-direction: column;}
   .swyi_page1{position:relative;}
   .body-header-mobile{position: absolute;}
