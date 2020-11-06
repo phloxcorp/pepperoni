@@ -58,7 +58,7 @@ body {
 /*gnb 아이템 ()로고, 다운로드 버튼, 폰트) 스타일링*/
 .logo{ height: 2rem;} /*로고 이미지 높이 */
 .appstore { height:3.4rem;} /*앱스토어 이미지 높이 */
-.gnb-menu{font-size:1.4rem;} /*메뉴 크기*/
+.gnb-menu{font-size:1.4rem; padding: 0rem 1.2rem; } /*메뉴 크기*/
 /*app-open 모바일에서 띄우기*/
 .app-open{display: flex; align-items: center; height: 10rem;}
 .app-open>a{margin:auto;}
