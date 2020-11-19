@@ -34,8 +34,8 @@ body {
 .jumbotron .gnb, .body, .footer {display: flex;}
 
 .gnb {
-  height:8rem; z-index: 10;
-  background-color: #fff; border-bottom: 0.1rem solid #dbdbdb;
+  height:6rem; z-index: 10;
+  background-color: #fff; border-bottom: 0.1rem solid #000000;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -51,14 +51,19 @@ body {
 }
 
 /*gnb 블록 설정*/
-.gnb-left, .gnb-right {display:flex; align-items: center;} /*아이템은 가로로 쌓임, 세로축 중앙정렬*/
+.gnb-left, .gnb-center, .gnb-right {display:flex; align-items: center;} /*아이템은 가로로 쌓임, 세로축 중앙정렬*/
 .gnb-left { margin-right: auto; background-color: white;} /*아이템 왼 정렬*/
-.gnb-right { margin-left:auto; flex-direction: row-reverse; background-color: white;} /*아이템 오른 정렬*/
+.gnb-center {margin-left:auto; flex-direction:row; justify-content:center; position:absolute; top:0; bottom:0; left:0; right:0;}
+.gnb-right { margin-left:auto; flex-direction: row-reverse; justify-content:center; border-left: 0.1rem solid #000;} /*아이템 오른 정렬*/
+
 .gnb-logo, .gnb-download, .gnb-menu { padding: 0rem 2.4rem;} /* 로고, 다운로드버튼, 메뉴 컨테이너 패딩 설정 */
+.gnb-download{padding:0rem;}
 /*gnb 아이템 ()로고, 다운로드 버튼, 폰트) 스타일링*/
-.logo{ height: 2rem;} /*로고 이미지 높이 */
+.logo{ height: 3rem;} /*로고 이미지 높이 */
 .appstore { height:3.4rem;} /*앱스토어 이미지 높이 */
 .gnb-menu{font-size:1.4rem; padding: 0rem 1.2rem; } /*메뉴 크기*/
+.gnb-menu:hover{text-decoration:underline;}
+
 /*app-open 모바일에서 띄우기*/
 .app-open{display: flex; align-items: center; height: 10rem;}
 .app-open>a{margin:auto;}
@@ -102,11 +107,10 @@ body {
     content: "";
     left: 0; top: 8rem;
     height: 2rem; width: 100%;
-    background: #fa6238;
     position: absolute;
     z-index: -1;
   }
-.body-contents4{font-size: 1.6rem; padding-top:2rem; line-height: 3rem;}
+.body-contents4{font-size: 1.6rem; padding-top:2rem; line-height: 2.6rem;}
 .body-adspreview {display:flex;  }
 .body-adspreview .body-header4::after {top: 14rem;}
 .body-full-ads {display:flex; position: relative; background-color: black;}
