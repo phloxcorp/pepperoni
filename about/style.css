@@ -53,7 +53,7 @@ body {
 /*gnb 블록 설정*/
 .gnb-left, .gnb-center, .gnb-right {display:flex; align-items: center;} /*아이템은 가로로 쌓임, 세로축 중앙정렬*/
 .gnb-left { margin-right: auto; background-color: white;} /*아이템 왼 정렬*/
-.gnb-center {margin-left:auto; flex-direction:row; justify-content:center; position:absolute; top:0; bottom:0; left:0; right:0;}
+.gnb-center {margin-left:auto; flex-direction:row; justify-content:center; position:absolute; top:0; bottom:0; left:0; right:0; width:36rem; margin-right:auto;}
 .gnb-right { margin-left:auto; flex-direction: row-reverse; justify-content:center; border-left: 0.1rem solid #000;} /*아이템 오른 정렬*/
 
 .gnb-logo, .gnb-download, .gnb-menu { padding: 0rem 2.4rem;} /* 로고, 다운로드버튼, 메뉴 컨테이너 패딩 설정 */
