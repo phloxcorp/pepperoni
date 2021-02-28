@@ -117,8 +117,10 @@ height: 100%; width: 87%; max-width: 120rem; background: url('img/bg2.png') 0% 4
   background: url('img/movie3.png') no-repeat ; background-size: contain; background-position: center;}
 
 .body-creator{
-  padding: 16rem 64rem 14rem 0;
-  background: url('img/bg4.jpg') 100% 50% no-repeat;
+  background: url('img/bg4.png') calc(50vw - 20rem) 60% no-repeat;
+}
+.body-creator-left{
+  padding: 14rem 67rem 10rem 0;
 }
 .body-creator-left>.font-20{margin-top:3rem;}
 
@@ -193,12 +195,18 @@ height: 100%; width: 87%; max-width: 120rem; background: url('img/bg2.png') 0% 4
 /*미디어 크기에 따라 변환 시작*/
 @media (max-width:1025px) {
   html, body{font-size: 8px;}
-  .body-creator {padding: 16rem 72rem 14rem 0;}
+  .body-creator{
+    background: url('img/bg4.png') calc(50vw - 27rem) 60% no-repeat;
+  }
+  .body-creator-left{
+    padding: 16rem 72rem 14rem 0;
+  }
   .body-company2-bottom>.logo {background-size: 50% auto;}
 }
 @media (max-width:930px) {
   html, body{font-size: 7px;}
-  .body-creator {padding: 16rem 78rem 14rem 0;}
+  .body-creator-left{ padding: 16rem 72rem 14rem 0;}
+  .body-creator{background-size: 100% auto;}
 }
 
 @media (max-width:800px){
@@ -216,13 +224,11 @@ height: 100%; width: 87%; max-width: 120rem; background: url('img/bg2.png') 0% 4
     background: url(img/bg2.png) 69% 5% no-repeat;
     background-size: 300% auto;}
   .body-header2-top {margin-top: 10rem;}
-  .body-creator{
-    padding: 10rem 0rem 4rem 0;
-    background:url();
-  }
+  .body-creator-left{ padding: 10rem 0rem 4rem 0;}
+  .body-creator{background:url();}
   .body-creator-mobile {
     height: 50rem;
-    background: url(img/bg4.jpg) 50% 0% / 130% no-repeat;
+    background: url(img/bg4.png) 36% 41% / 180% no-repeat;
   }
   .body-company1 { flex-direction: column; padding-top: 10rem; padding-bottom: 6rem;}
   .body-company1-left { width: 100%;}
@@ -251,6 +257,7 @@ height: 100%; width: 87%; max-width: 120rem; background: url('img/bg2.png') 0% 4
   .body-brand-top>.inner>.font-20 {margin-top: 2rem;}
   .body-brand-top {height: 36%; padding-top: 10rem;}
   .button{min-width: 34rem;height: 12rem; margin-top:4rem; padding: 2rem 3rem;}
+  .body-header2-bottom {height: 90rem;}
 }
 
 @media (max-width:800px) and (min-width:500px) {
@@ -258,7 +265,7 @@ height: 100%; width: 87%; max-width: 120rem; background: url('img/bg2.png') 0% 4
   .body-header1 {height: 96rem;}
   .body-creator-mobile {
     height: 70rem;
-    background: url(img/bg4.jpg) 50% 0% / 90% no-repeat;}
+    background: url("img/bg4.png") 50% 39% / 140% no-repeat;}
   .body-brand {height: 160rem;}
   .body-brand-top {height: 35%;}
   .body-brand-bottom {height: 65%;}
