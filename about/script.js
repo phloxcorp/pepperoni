@@ -13,16 +13,16 @@ if(userWidth<=800){
   isWeb = true;
 }
 
-//resize 시에만 디텍팅
+//resize 시에만 디텍팅 해야함 아니면 튕김요
 
 window.onresize = resizeEvent;
 function resizeEvent() {
     userWidth = $(window).width();
     console.log('userWidth is ' + userWidth);
-    if(userWidth<=800){
+    if(userWidth<=800 && isWeb){
       mobilesize();
       isWeb = false;
-    }else{
+    }else if(userWidth>767 && !isWeb){
       websize();
       isWeb = true;
     }
