@@ -34,7 +34,7 @@ body {
 .inner{ max-width: 112rem; margin: 0 auto;}
 
 .gnb { /* 나중에 하자 */
-  z-index: 1;
+  z-index: 2;
   background-color: #fff;
   position: -webkit-sticky; /* Safari */
   position: sticky;
@@ -74,7 +74,7 @@ body {
   padding-top: 0.6rem;
   justify-content: center;
 }
-.gnb-menu{margin:0 2rem;}
+.gnb-menu{padding: 0 2rem;}
 .gnb-menu:hover{text-decoration:underline;}
 
 
@@ -110,7 +110,7 @@ height: 100%; width: 87%; max-width: 120rem; background: url('img/bg2.png') 0% 4
 
 .cover_image{height: 40%; width: 100%;
   background: url('img/bg6.png') repeat-x ; background-size: contain; background-position: center;}
-.cover_image2{position: absolute; height: 90%; width: 100%;
+.cover_image2{position: absolute; height: 96%; width: 100%;
   background: url('img/bg7.png') no-repeat ; background-size: contain; background-position: center;}
 .movie{position: absolute; height: 90%; width: 100%; }
 .cover_image3{position: absolute; height: 96%; width: 100%;
