@@ -137,6 +137,7 @@ height: 100%; width: 87%; max-width: 120rem; background: url('img/bg2.png') 0% 4
 .body-brand{height: 88rem;}
 .body-brand-top{height: 40%; background-color: #ffc402; padding-top: 4rem;}
 /*background-image: linear-gradient(102deg, #c9bffb -2%, #a9c6d9 115%);*/
+
 .body-brand-bottom{position:relative; height: 60%; display: flex; flex-direction: row; }
 .brand-image{position: relative; display: flex; min-width:40rem;}
 .brand-title{position: absolute; padding: 41rem 4rem 0rem; color:white; z-index: 1;}
@@ -261,7 +262,7 @@ height: 100%; width: 87%; max-width: 120rem; background: url('img/bg2.png') 0% 4
   .body-brand-top {height: 36%; padding-top: 10rem;}
   .button{min-width: 34rem;height: 12rem; margin-top:4rem; padding: 2rem 3rem;}
   .body-header2-bottom {height: 90rem;}
-
+  .body-brand-top{background-image: linear-gradient(102deg, #c9bffb -2%, #a9c6d9 115%);} /*그라디언트다아*/
 }
 
 @media (max-width:800px) and (min-width:500px) {
