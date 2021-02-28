@@ -69,7 +69,7 @@ body {
 .gnb-logo{position: absolute; top:-3rem; left:-57rem;
   height: 5rem; width: 5rem; background-image: url('img/pprnfavicon.png');
   background-size: cover; background-position: center; } /*로고 이미지 높이 */
-
+.gnb-logo:hover{height: 8rem; width: 8rem; top:-3rem; left:-59rem; transform: rotate(3600deg); transition: all 5.0s ease-in-out;}
 .gnb-bottom{display: flex; height: 5rem; border-top: 0.1rem solid #000000; border-bottom: 0.1rem solid #000000;
   padding-top: 0.6rem;
   justify-content: center;
@@ -95,7 +95,8 @@ height: 100%; width: 87%; max-width: 120rem; background: url('img/bg2.png') 0% 4
 .download>a{margin-bottom: 0.5rem; height: 5rem; width:auto; background-size: contain; background-repeat: no-repeat;}
 .download>.apple{background-image: url('img/appleappstore.svg');}
 .download>.google{background-image: url('img/googleappstore.svg');}
-
+.download>.apple:hover{cursor: pointer; color:#9D05DA; margin-left:0.3rem; transition: all 0.2s ease-in-out;}
+.download>.google:hover{cursor: pointer; color:#9D05DA; margin-left:0.3rem; transition: all 0.2s ease-in-out;}
 
 .body-pepperoniweb{height: 8rem; background-color: black; }
 .body-pepperoniweb>.font-20{color:white; text-align: center; padding-top:1.6rem;}
@@ -164,6 +165,7 @@ height: 100%; width: 87%; max-width: 120rem; background: url('img/bg2.png') 0% 4
 .body-company1-right{width:60%; border-bottom: 0.1rem solid #000000;}
 .body-company1-right>.font-20{padding:0rem 0rem 4rem 1rem;}
 .news{width:100%; border-top: 0.1rem solid #000000; text-align: left; padding:1rem 0rem 4rem 1rem;}
+.news:hover{cursor: pointer; color:#9D05DA; padding-left:1.3rem; transition: all 0.3s ease-in-out;}
 .news>.font-16{padding-top:1rem;}
 /*.news>.font-16:hover{font-weight: 900;}*/
 
@@ -188,7 +190,7 @@ height: 100%; width: 87%; max-width: 120rem; background: url('img/bg2.png') 0% 4
 .footer>.inner>.menu{display: flex; flex-direction: column; width: 40rem; margin-right: 20rem;}
 .menu>a>.font-black{color: white; margin-bottom:2rem;}
 .footer>.inner>.info{display: flex; width: 90rem; color:#ffffff96;}
-.menu>a>.font-black:hover{color:#9D05DA;}
+.menu>a>.font-black:hover{cursor: pointer; color:#9D05DA; padding-left:0.3rem; transition: all 0.2s ease-in-out;}
 
 
 
