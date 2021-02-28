@@ -8,8 +8,7 @@ if(userWidth<=800){
   mobilesize();
   isWeb = false;
 }else{
-  $('#main .mobile').hide();
-  $('#main .webHide').hide();
+  websize();
   isWeb = true;
 }
 
@@ -22,7 +21,7 @@ function resizeEvent() {
     if(userWidth<=800 && isWeb){
       mobilesize();
       isWeb = false;
-    }else if(userWidth>767 && !isWeb){
+    }else if(userWidth>800 && !isWeb){
       websize();
       isWeb = true;
     }
@@ -31,12 +30,12 @@ function resizeEvent() {
 //responsive시 리로드
 
 function websize(){
-  location.reload();
-  $('#main .mobile').hide();
+  $('#main .webHide').hide();
+  $('#main .mobileHide').show();
 };
 
 function mobilesize(){
   $('#main .mobileHide').hide();
-  $('#main .mobile').show();
+  $('#main .webHide').show();
   //$("#main .mobile-unwrap").unwrap();
 };
