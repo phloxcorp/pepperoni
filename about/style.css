@@ -191,7 +191,7 @@ height: 100%; width: 87%; max-width: 120rem; background: url('img/bg2.png') 0% 4
 .footer>.inner>.logo{display: flex; width: 14rem; margin-right: 10rem; margin-left:10rem; background:url('img/pprnwhite.png') 0 0 no-repeat; background-size: contain;}
 .footer>.inner>.menu{display: flex; flex-direction: column; width: 32rem; margin-right: 0rem;}
 .menu>a>.font-black{color: white; margin-bottom:2rem;}
-.footer>.inner>.info{display: flex; width: 100rem; color:#ffffff96;}
+.footer>.inner>.info{width: 100rem; color:#ffffff96;}
 .menu>a>.font-black:hover{cursor: pointer; color:#9D05DA; padding-left:0.3rem; transition: all 0.2s ease-in-out;}
 
 
