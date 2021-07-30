@@ -5,7 +5,8 @@
 .home-video-wrap .lt-item{position:relative;width:50%;height:1140px;overflow:Hidden;}
 .home-video-wrap .cont{width:100%;position:absolute;left:0;top:0;height:100%;overflow:Hidden;text-align:center;display:flex;justify-content:center;align-items:center;font-weight:bold;font-size:36px;color:#fff;flex-direction:column;}
 .home-video-wrap .cont span{padding-top:7px;display:block;font-size:16px;color:#a4a4a4;font-weight:500;}
-.home-video-wrap a{width:143px;height:35px;padding-bottom:8px;font-size:24px;color:#fff;font-weight:bold;display:flex;justify-content:flex-start;align-items:flex-start;position:absolute;right:78px;bottom:64px;}
+.home-video-wrap a{width:143px;height:35px;padding-bottom:8px;font-size:24px;color:#fff;font-weight:bold;display:flex;justify-content:flex-start;align-items:flex-start;position:absolute;right:78px;bottom:64px;background:url(../about/img/home/ico-more-arr-white.svg) no-repeat left bottom;background-size:contain}
+.home-video-wrap a:hover{color:#9D05DA;background:url(../about/img/home/ico-more-arr-purple.svg) no-repeat left bottom;}
 .home-video-wrap .rt-item{position:relative;width:50%;height:1140px;overflow:Hidden;display:flex;justify-content:center;align-items:center;}
 .home-video-wrap video{width:100%;position:absolute;left:0;top:0;height:100%;overflow:Hidden;}
 
@@ -52,7 +53,8 @@
 .home-why-wrap{width:100%;height:auto;overflow:hidden;background:#000;padding-bottom:88px;}
 .home-why-wrap .header-item{width:1316px;height:182px;overflow:hidden;margin:0 auto;display:flex;justify-content:space-between;align-items:center;}
 .home-why-wrap .header-item .tit{font-size:36px;color:#fff;font-weight:bold;}
-.home-why-wrap .header-item a{width:143px;height:35px;padding-bottom:8px;font-size:24px;color:#fff;font-weight:bold;display:flex;justify-content:flex-start;align-items:flex-start;}
+.home-why-wrap .header-item a{width:143px;height:35px;padding-bottom:8px;font-size:24px;color:#fff;font-weight:bold;display:flex;justify-content:flex-start;align-items:flex-start;background:url(../about/img/home/ico-more-arr-white.svg) no-repeat left bottom;background-size:contain}
+.home-why-wrap .header-item a:hover{color:#9D05DA;background:url(../about/img/home/ico-more-arr-purple.svg) no-repeat left bottom;}
 .home-why-wrap .home-why-list{width:1316px;padding:48px;height:auto;overflow:hidden;border-radius:12px;background:#fff;margin:0 auto;}
 .home-why-wrap .home-why-list ul{width:calc( 100% + 34px );height:auto;overflow:hidden;margin-left:-17px;}
 .home-why-wrap .home-why-list ul li{width:calc( 100% / 3 - 34px );margin:0 17px;height:410px;overflow:Hidden;float:left;}
@@ -97,7 +99,7 @@
 
 .select-wrap{width:200px;margin:10px auto 0 auto;position:relative;display:block;}
 .select-wrap>a{text-decoration:underline;display:inline-block;width:calc( 100% - 40px );padding-left:12px;padding-right:26px;line-height:46px;height:46px;overflow:hidden;border-radius:2px;font-size:18px;color:#fff;position:relative;text-overflow:ellipsis; white-space:nowrap;word-wrap:normal;}
-.select-wrap>a:before{content:"";width:20px;height:20px;overflow:hidden;display:block;background:url(../about/img/home/ico-rv-down.svg) no-repeat;position:absolute;right:6px;top:50%;margin-top:-10px;}
+.select-wrap>a:before{content:"";width:22px;height:10px;overflow:hidden;display:block;background:url(../about/img/home/ico-rv-down.svg) no-repeat;position:absolute;right:6px;top:50%;margin-top:-5px;}
 .select-wrap>a.on:before{transform:rotate(180deg)}
 .select-wrap .select-result{display:none;width:calc( 100% - 2px );height:auto;overflow:hidden;border:1px solid #fff;position:absolute;left:0;top:46px;background:#000;max-height: 240px;overflow-y:auto;}
 
@@ -139,7 +141,7 @@
     .home-video-wrap.type01 .lt-item{height:300px;}
     .home-video-wrap.type01 .rt-item{height:90vw;}
     .home-video-wrap .cont{font-size:22px;}
-    .home-video-wrap a{width:100px;right:20px;bottom:20px;font-size:16px;}
+    .home-video-wrap a{width:100px;right:20px;bottom:20px;font-size:16px;padding-bottom:0;height:30px;}
     .home-benefit-wrap .top-item{padding:0 20px;}
     .home-benefit-wrap .top-item .tit{margin:40px 0 10px 0;font-size:24px;}
     .home-benefit-wrap .top-item .desc{font-size:16px;}

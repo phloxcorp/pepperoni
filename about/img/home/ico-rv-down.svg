@@ -1,13 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-    <g fill="none" fill-rule="evenodd">
-        <g fill="#fff" fill-rule="nonzero">
-            <g>
-                <g>
-                    <g>
-                        <path d="M2.293 6.293c.36-.36.928-.388 1.32-.083l.094.083L10 12.585l6.293-6.292c.36-.36.928-.388 1.32-.083l.094.083c.36.36.388.928.083 1.32l-.083.094-7 7c-.36.36-.928.388-1.32.083l-.094-.083-7-7c-.39-.39-.39-1.024 0-1.414z" transform="translate(-501 -641) translate(360 630) translate(20 6) translate(121 5)"/>
-                    </g>
-                </g>
-            </g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="10px" viewBox="0 0 22 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>E95E223D-FBA2-4E2F-8718-40DC819BF323</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="사진에셋" transform="translate(-2218.000000, -599.000000)">
+            <polyline id="Path-5" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" points="2219 600 2229 608 2239 600"></polyline>
+            <rect id="Rectangle-Copy-2" stroke="#979797" x="2204.05556" y="590.5" width="49" height="28"></rect>
         </g>
     </g>
 </svg>
