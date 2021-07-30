@@ -30,12 +30,12 @@ function resizeEvent() {
 //responsive시 리로드
 
 function websize(){
-  $('#main .webHide').hide();
-  $('#main .mobileHide').show();
+  $('#main .webHide, #home .webHide').hide();
+  $('#main .mobileHide, #home .mobileHide').show();
 };
 
 function mobilesize(){
-  $('#main .mobileHide').hide();
-  $('#main .webHide').show();
+  $('#main .mobileHide, #home .mobileHide').hide();
+  $('#main .webHide, #home .webHide').show();
   //$("#main .mobile-unwrap").unwrap();
 };

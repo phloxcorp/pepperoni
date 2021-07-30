@@ -208,10 +208,22 @@
                       </div>
                   </div>
                   <script>
-                      var swiper = new Swiper('#home-active-slide', {
-                          //loop: true,
-                          slidesPerView: 'auto',
-                          //spaceBetween: '24'
+                      var ww = $(window).width();
+                      var mySwiper = undefined;
+                      function initSwiper() {
+                          if (ww < 768) {
+                              mySwiper.destroy();
+                              mySwiper = undefined;
+                          } else if (ww > 768) {
+                              mySwiper = new Swiper("#home-active-slide", {
+                                  slidesPerView: 'auto'
+                              });
+                          }
+                      }
+                      initSwiper();
+                      $(window).on('resize', function () {
+                          ww = $(window).width();
+                          initSwiper();
                       });
                   </script>
 
@@ -472,9 +484,22 @@
                       </div>
                   </div>
                   <script>
-                      var homeTipSlide = new Swiper('#home-tip-slide', {
-                          //loop: true,
-                          slidesPerView: 'auto'
+                      var ww = $(window).width();
+                      var mySwiper1 = undefined;
+                      function initSwiper01() {
+                          if (ww < 768) {
+                              mySwiper1.destroy();
+                              mySwiper1 = undefined;
+                          } else if (ww > 768) {
+                              mySwiper1 = new Swiper("#home-tip-slide", {
+                                  slidesPerView: 'auto'
+                              });
+                          }
+                      }
+                      initSwiper01();
+                      $(window).on('resize', function () {
+                          ww = $(window).width();
+                          initSwiper01();
                       });
                   </script>
               </section>
@@ -529,7 +554,7 @@
                     var v1 = parseInt($("#select-item01 .select-value").attr("data-value"));
                     var v2 = parseInt($("#select-item02 .select-value").attr("data-value"));
                     var v3 = parseInt($("#select-item03 .select-value").attr("data-value"));
-                    var _tot = v1*v2*v3;
+                    var _tot = v1*v2*v3*0.03*0.01;
                     _tot = _tot.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
                     $(".home-benefit-wrap .bottom-item .stit strong").text(_tot +"원");
                     $(".select-wrap>a").removeClass("on");
