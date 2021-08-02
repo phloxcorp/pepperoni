@@ -404,9 +404,14 @@
                   </div>
 
                   <script>
+                      var ww = $(window).width();
+                      var _time = 12000;
+                      if (ww < 768) {
+                          _time = 6000;
+                      }
                       $('.marquee').marquee({
                           //speed in milliseconds of the marquee
-                          duration: 12000,
+                          duration: _time,
                           //gap in pixels between the tickers
                           gap: 0,
                           //time in milliseconds before the marquee will start animating
