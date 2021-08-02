@@ -69,7 +69,8 @@
                       <a href="javascript:void(0)">페퍼 지원</a>
                   </div>
                   <div class="rt-item">
-                      <img src="./about/img/home/etc-dummy.jpg" class="dummy" />
+                      <img src="./about/img/home/etc-dummy.jpg" class="dummy dummy-w" />
+                      <img src="./about/img/home/etc-dummy-m.jpg" class="dummy-m" />
                       <video id="video01" muted poster="" loop="" playsinline="" autoplay>
                           <source src="./about/video/video-top.mp4" type="video/mp4">
                       </video>
@@ -111,7 +112,7 @@
                           <dt>한 달 동안 예상 피드 업로드 횟수는 어느정도인가요?</dt>
                           <dd>
                               <div class="select-wrap" id="select-item01">
-                                  <a href="javascript:void(0)" data-value="2" class="select-value">2회</a>
+                                  <a href="javascript:void(0)" data-value="10" class="select-value">10회</a>
                                   <div class="select-result">
                                       <ul>
                                           <li><a href="javascript:void(0)" data-value="2">2회</a></li>
@@ -126,13 +127,13 @@
                           <dt>주로 소개하실 제품의 가격대는 어느정도인가요?</dt>
                           <dd>
                               <div class="select-wrap" id="select-item02">
-                                  <a href="javascript:void(0)" data-value="30000" class="select-value">3만원 대</a>
+                                  <a href="javascript:void(0)" data-value="100000" class="select-value">10만원 대</a>
                                   <div class="select-result">
                                       <ul>
                                           <li><a href="javascript:void(0)" data-value="30000">3만원 대</a></li>
                                           <li><a href="javascript:void(0)" data-value="50000">5만원 대</a></li>
-                                          <li><a href="javascript:void(0)" data-value="1000000">10만원 대</a></li>
-                                          <li><a href="javascript:void(0)" data-value="2000000">20만원 대</a></li>
+                                          <li><a href="javascript:void(0)" data-value="100000">10만원 대</a></li>
+                                          <li><a href="javascript:void(0)" data-value="200000">20만원 대</a></li>
                                       </ul>
                                   </div>
                               </div>
@@ -140,7 +141,7 @@
                           <dt>나를 좋아하는 팔로워 / 팬 수는 얼마나 되나요?</dt>
                           <dd>
                               <div class="select-wrap" id="select-item03">
-                                  <a href="javascript:void(0)" data-value="1000" class="select-value">1,000명</a>
+                                  <a href="javascript:void(0)" data-value="50000" class="select-value">5만명</a>
                                   <div class="select-result">
                                       <ul>
                                           <li><a href="javascript:void(0)" data-value="1000">1,000명</a></li>
@@ -157,7 +158,7 @@
                       </dl>
                   </div>
                   <div class="bottom-item">
-                      <div class="stit">월 최대 <strong>1,230,000원</strong>의 혜택을 받아보세요!</div>
+                      <div class="stit">월 최대 <strong>9,450,000원</strong>의 혜택을 받아보세요!</div>
                       <div class="sdesc">실제로 활동하는 페퍼의 스토리 구매 전환률을 기반으로 측정한 값입니다.</div>
                       <ul>
                           <li>
@@ -405,11 +406,11 @@
                   <script>
                       $('.marquee').marquee({
                           //speed in milliseconds of the marquee
-                          duration: 6000,
+                          duration: 12000,
                           //gap in pixels between the tickers
                           gap: 0,
                           //time in milliseconds before the marquee will start animating
-                          delayBeforeStart: 0,
+                          delayBeforeStart:0,
                           //'left' or 'right'
                           direction: 'left',
                           //true or false - should the marquee be duplicated to show an effect of continues flow
@@ -539,7 +540,8 @@
 
               <section class="home-video-wrap">
                   <div class="lt-item">
-                      <img src="./about/img/home/etc-dummy.jpg" class="dummy" />
+                      <img src="./about/img/home/etc-dummy.jpg" class="dummy dummy-w" />
+                      <img src="./about/img/home/etc-dummy-m.jpg" class="dummy-m" />
                       <video muted poster="" loop="" playsinline="" autoplay>
                           <source src="./about/video/video-bottom.mp4" type="video/mp4">
                       </video>
@@ -611,7 +613,7 @@
                     var v1 = parseInt($("#select-item01 .select-value").attr("data-value"));
                     var v2 = parseInt($("#select-item02 .select-value").attr("data-value"));
                     var v3 = parseInt($("#select-item03 .select-value").attr("data-value"));
-                    var _tot = v1*v2*v3*0.03*0.001;
+                    var _tot = (v1*v2*v3)*0.03*0.001*6.3;
                     _tot = _tot.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
                     $(".home-benefit-wrap .bottom-item .stit strong").text(_tot +"원");
                     $(".select-wrap>a").removeClass("on");
