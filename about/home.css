@@ -161,7 +161,7 @@
     .home-benefit-wrap .middle-item dl dd { margin-bottom: 16px;}
     .home-benefit-wrap .top-item{padding:0 20px;}
     .home-benefit-wrap .swiper-container{width:calc( 100% + 40px );margin-left:-20px;padding-left:20px;}
-    .home-benefit-wrap .swiper-container .swiper-slide{width:324px;}
+    .home-benefit-wrap .swiper-container .swiper-slide{width:324px;margin-right:14px;}
     .home-benefit-wrap .middle-item dl dt{font-size: 16px;padding-right: 60px;padding-left: 60px;}
     .select-wrap{width:182px;}
     .select-wrap>a{font-size:20px;}
