@@ -26,7 +26,7 @@
 .home-benefit-wrap .top-item ul li a img{width:100%;float:left;}
 .home-benefit-wrap .middle-item{margin-top:-230px;width:100%;height:auto;background:#000;display:flex;}
 .home-benefit-wrap .middle-item dl{width:100%;height:auto;padding-top:314px}
-.home-benefit-wrap .middle-item dl dt{width:100%;height:auto;text-align:center;font-size:24px;color:#fff;font-weight:500;}
+.home-benefit-wrap .middle-item dl dt{width:100%;height:auto;text-align:center;font-size:24px;color:#fff9;font-weight:500;}
 .home-benefit-wrap .middle-item dl dd{margin-bottom:36px;width:100%;height:auto;}
 .home-benefit-wrap .bottom-item{background:#000;width:100%;height:auto;overflow:hidden;padding-top:44px;padding-bottom:88px;}
 .home-benefit-wrap .bottom-item .stit{width:100%;height:auto;overflow:hidden;text-align:center;font-size:36px;color:#fff;font-weight:500;}
@@ -101,7 +101,7 @@
 .home-tip-wrap .swiper-container .swiper-slide a .sdesc{margin-top:4px;font-size:24px;color:#000;font-weight:500;width:100%;height:268px;overflow:Hidden;}
 
 .select-wrap{width:300px;margin:10px auto 0 auto;position:relative;display:block;}
-.select-wrap>a{margin:0 auto;text-decoration:underline;display:flex;justify-content:center;align-items:center;width:100%;line-height:46px;height:46px;overflow:hidden;border-radius:2px;font-size:24px;color:#fff;position:relative;text-overflow:ellipsis; white-space:nowrap;word-wrap:normal;}
+.select-wrap>a{margin:0 auto;text-decoration:underline;display:flex;justify-content:center;align-items:center;width:100%;line-height:46px;height:46px;overflow:hidden;border-radius:2px;font-size:30px;color:#fff;position:relative;text-overflow:ellipsis; white-space:nowrap;word-wrap:normal;}
 .select-wrap>a:after{margin-left:10px;content:"";width:22px;height:10px;overflow:hidden;display:flex;background:url(../about/img/home/ico-rv-down.svg) no-repeat;}
 .select-wrap>a.on:after{transform:rotate(180deg)}
 .select-wrap .select-result{display:none;width:calc( 100% - 2px );height:auto;overflow:hidden;border:1px solid rgba(255,255,255,.4);position:absolute;left:0;top:46px;background:#000;overflow-y:auto;}
