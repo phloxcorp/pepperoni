@@ -39,8 +39,8 @@
         <!-- gnb -->
           <div class="gnb">
               <div class="gnb-top font-12 font-black">
-                  <div class="mobileHide">지금 페퍼로니에선 입점수수료 0% 프로모션 진행중!</div>
-                  <div class="font-16 webHide">입점수수료 0% 프로모션 진행중!</div>
+                  <div class="mobileHide">지금 크리에이터로 지원하면 첫 2달간 15% 수익쉐어!</div>
+                  <div class="font-16 webHide">지금 크리에이터로 지원하면 첫 2달간 15% 수익쉐어!</div>
               </div>
               <div class="gnb-mid inner"><a href="/"><button class="gnb-logo"></button></a></div>
               <div class="gnb-bottom mobileHide">
@@ -64,8 +64,10 @@
               <section class="home-video-wrap type01">
                   <div class="lt-item">
                       <img src="img/home/etc-dummy.jpg" class="dummy" />
-                      <div class="cont">페퍼는 좋은 구매 경험을
-                          <br />공유하는 사람들입니다</div>
+                      <div class="cont">영상쇼핑 플랫폼 페퍼로니에서
+                              <br/>페퍼를 모집합니다.
+                              <br /><strong>솔직한 리뷰로 쇼핑에 도움을 주고</strong>
+                              리워드를 받으세요</div>
                       <a href="mailto:contact@pepperoni.co.kr">페퍼 지원</a>
                   </div>
                   <div class="rt-item">
@@ -112,10 +114,10 @@
                           <dt>한 달 동안 예상 피드 업로드 횟수는 어느정도인가요?</dt>
                           <dd>
                               <div class="select-wrap" id="select-item01">
-                                  <a href="javascript:void(0)" data-value="10" class="select-value">10회</a>
+                                  <a href="javascript:void(0)" data-value="6" class="select-value">6회</a>
                                   <div class="select-result">
                                       <ul>
-                                          <li><a href="javascript:void(0)" data-value="2">2회</a></li>
+                                          <li><a href="javascript:void(0)" data-value="4">4회</a></li>
                                           <li><a href="javascript:void(0)" data-value="6">6회</a></li>
                                           <li><a href="javascript:void(0)" data-value="10">10회</a></li>
                                           <li><a href="javascript:void(0)" data-value="16">16회</a></li>
@@ -127,13 +129,13 @@
                           <dt>주로 소개하실 제품의 가격대는 어느정도인가요?</dt>
                           <dd>
                               <div class="select-wrap" id="select-item02">
-                                  <a href="javascript:void(0)" data-value="50000" class="select-value">5만원 대</a>
+                                  <a href="javascript:void(0)" data-value="30000" class="select-value">3만원 대</a>
                                   <div class="select-result">
                                       <ul>
                                           <li><a href="javascript:void(0)" data-value="30000">3만원 대</a></li>
-                                          <li><a href="javascript:void(0)" data-value="50000">5만원 대</a></li>
-                                          <li><a href="javascript:void(0)" data-value="100000">10만원 대</a></li>
-                                          <li><a href="javascript:void(0)" data-value="200000">20만원 대</a></li>
+                                          <li><a href ="javascript:void(0)" data-value="45000">5만원 대</a></li>
+                                          <li><a href="javascript:void(0)" data-value="50400">7만원 대</a></li>
+                                          <li><a href="javascript:void(0)" data-value="54000">10만원 대</a></li>
                                       </ul>
                                   </div>
                               </div>
@@ -150,7 +152,7 @@
                                           <li><a href="javascript:void(0)" data-value="50000">5만명</a></li>
                                           <li><a href="javascript:void(0)" data-value="100000">10만명</a></li>
                                           <li><a href="javascript:void(0)" data-value="200000">20만명</a></li>
-                                          <li><a href="javascript:void(0)" data-value="300000">30만명</a></li>
+
                                       </ul>
                                   </div>
                               </div>
@@ -158,8 +160,8 @@
                       </dl>
                   </div>
                   <div class="bottom-item">
-                      <div class="stit">월 최대 <strong>945,000원</strong>의 혜택을 받아보세요!</div>
-                      <div class="sdesc">실제로 활동하는 페퍼의 스토리 구매 전환률을 기반으로 측정한 값입니다.</div>
+                      <div class="stit">월 최대 <strong>1,109,202원</strong>의 혜택을 받아보세요!</div>
+                      <div class="sdesc">실제 페퍼들의 팔로워 수당 스토리 구매 전환금을 기반으로 추정된 값입니다.</div>
                       <ul>
                           <li>
                               <div class="cont">TOP 페퍼가
@@ -170,7 +172,7 @@
                               <div class="cont">TOP 페퍼의
                                   <br />스토리 1개를 통한
                                   <br />한 달 거래액</div>
-                              <div class="price">7,421,200원</div>
+                              <div class="price">8,082,600원</div>
                           </li>
                       </ul>
                   </div>
@@ -619,7 +621,8 @@
                     var v1 = parseInt($("#select-item01 .select-value").attr("data-value"));
                     var v2 = parseInt($("#select-item02 .select-value").attr("data-value"));
                     var v3 = parseInt($("#select-item03 .select-value").attr("data-value"));
-                    var _tot = (v1*v2*v3)*0.03*0.001*6.3;
+                    var _tot = (7.5672*v3+109195)*v1/30000*v2;
+                    _tot = Math.floor(_tot);
                     _tot = _tot.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")
                     $(".home-benefit-wrap .bottom-item .stit strong").text(_tot +"원");
                     $(".select-wrap>a").removeClass("on");
