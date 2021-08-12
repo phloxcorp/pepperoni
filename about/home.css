@@ -12,10 +12,6 @@
 .home-video-wrap .rt-item{position:relative;width:50%;height:auto;overflow:Hidden;display:flex;justify-content:center;align-items:center;}
 .home-video-wrap video{width:100%;position:absolute;left:0;top:0;height:100%;overflow:Hidden;}
 
-/* 홈버튼 고민중
-.home-about-wrap{height: 100px;width:100%;background: #000;align-items: center;color: white; font-size: 20px; justify-content: center;display: flex;border-top: 1px solid #fff2;}
-*/
-
 .home-benefit-wrap{width:100%;height:auto;overflow:hidden;}
 .home-benefit-wrap .top-item{position:relative;z-index:1;width:100%;height:auto;overflow:hidden;max-width:1280px;margin:0 auto;}
 .home-benefit-wrap .top-item .tit{font-size:36px;color:#000;font-weight:bold;margin:80px 0 16px 0;width:100%;height:auto;overflow:hidden;}
@@ -154,9 +150,9 @@
   .home-benefit-wrap .middle-item {margin-top: -270px;}
     .home-video-wrap .lt-item{height:auto;}
     .home-video-wrap .rt-item{height:170px;}
-    .home-video-wrap.type01 .lt-item{height:150px;}
+    .home-video-wrap.type01 .lt-item{height:200px;}
     .home-video-wrap.type01 .rt-item{height:auto;}
-    .home-video-wrap .cont{font-size:16px;font-weight:400;line-height: 24px;border-top: 1px solid #fff2;border-bottom: 1px solid #fff2;}
+    .home-video-wrap .cont{font-size:20px;font-weight:400;line-height: 32px;border-top: 1px solid #fff2;border-bottom: 1px solid #fff2;}
     .home-video-wrap .cont span{font-size:10px;line-height: normal;}
     .home-video-wrap a{width:100px;right:20px;bottom:20px;font-size:16px;padding-bottom:0;height:30px;}
     .home-benefit-wrap .top-item{padding:0 20px;}
