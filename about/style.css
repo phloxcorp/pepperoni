@@ -188,7 +188,7 @@ height: 100%; width: 87%; max-width: 120rem; background: url('img/bg2.png') 0% 4
 
 .footer{background-color: black;}
 .footer>.inner{display: flex; flex-direction: row; height: 100rem; padding-top: 8rem;}
-.footer>.inner>.logo{display: flex; width: 14rem; margin-right: 10rem; margin-left:10rem; background:url('img/pprnwhite.png') 0 0 no-repeat; background-size: contain;}
+.footer>.inner>.logo{display: flex; width: 24rem; margin-right: 10rem; margin-left:10rem; background:url('img/pepperoniwhite.png') 0 0 no-repeat; background-size: contain;}
 .footer>.inner>.menu{display: flex; flex-direction: column; width: 32rem; margin-right: 0rem;}
 .menu>a>.font-black{color: white; margin-bottom:2rem;}
 .footer>.inner>.info{width: 100rem; color:#ffffff96;}
